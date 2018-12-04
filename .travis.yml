@@ -18,7 +18,7 @@ before_script:
 
 script:
   - ionic cordova build ios
-  - npm test
+  - npm test --watch=false
 
 deploy:
  provider: pages
