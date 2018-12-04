@@ -10,7 +10,6 @@ branches:
   - develop
 
 install:
-  - npm install -g cordova ionic
   - npm install
 
 before_script:
@@ -18,3 +17,12 @@ before_script:
 
 script:
   - npm start
+
+deploy:
+ provider: pages
+ skip-cleanup: true
+ github-token: $GITHUB_TOKEN 
+ keep-history: true
+ on:
+   branch: master
+ local_dir: www
