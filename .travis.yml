@@ -10,13 +10,15 @@ branches:
   - develop
 
 install:
+  - npm install -g cordova ionic
   - npm install
 
 before_script:
   - npm install -g @angular/cli
 
 script:
-  - npm start
+  - npm build
+  - npm test
 
 deploy:
  provider: pages
