@@ -17,5 +17,4 @@ before_script:
   - npm install -g @angular/cli
 
 script:
-  - npm run build ios
-  - npm test
+  - npm start
