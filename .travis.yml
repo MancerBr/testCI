@@ -17,7 +17,7 @@ before_script:
   - npm install -g @angular/cli
 
 script:
-  - npm run build
+  - ionic cordova build ios
   - npm test
 
 deploy:
