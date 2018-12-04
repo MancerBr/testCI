@@ -10,7 +10,7 @@ branches:
   - develop
 
 install:
-  - npm install -g cordova ionic
+  - npm install -g nodejs
   - npm install
 
 before_script:
