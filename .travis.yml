@@ -28,6 +28,7 @@ before_script:
 script:
   - ionic cordova platform add ios
   - cd platforms/ios
+  - pod init
   - pod install
   - cd ../..
   - ionic cordova build ios
