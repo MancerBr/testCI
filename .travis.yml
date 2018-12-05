@@ -27,10 +27,10 @@ before_script:
   - gem install cocoapods
 
 script:
-  - pod install
   - ionic cordova platform add ios
   - cd platforms/ios
   - pod init
+  - pod install
   - cd ../..
   - ionic cordova build ios
   - npm test
