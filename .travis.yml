@@ -15,14 +15,15 @@ branches:
   - develop
 
 install:
+  - npm install -g ionic
   - npm install -g cordova ionic
-  - npm install
+  - npm install --unsafe-perm=true
 
 before_install:
-  - "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --headless --disable-gpu --remote-debugging-port=9222 http://localhost &"
+  - "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --headless --crash-dumps-dir=/tmp --disable-gpu --remote-debugging-port=9222 http://localhost &"
 
 before_script:
-  - npm install -g @angular/cli
+  - npm install -g @angular/cli@1.7.4
   - gem install cocoapods
 
 script:
