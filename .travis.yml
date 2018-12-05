@@ -23,8 +23,13 @@ before_install:
 
 before_script:
   - npm install -g @angular/cli
+  - gem install cocoapods
 
 script:
+  - ionic cordova platform add ios
+  - cd platforms/ios
+  - pod install
+  - cd ../..
   - ionic cordova build ios
   - npm test
 
