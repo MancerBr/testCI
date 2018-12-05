@@ -73,7 +73,7 @@
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-ionic-keyboard": {},
       "cordova-plugin-telerik-imagepicker": {
-        "PHOTO_LIBRARY_USAGE_DESCRIPTION": " "
+        "PHOTO_LIBRARY_USAGE_DESCRIPTION": "Select images to upload"
       }
     },
     "platforms": [
