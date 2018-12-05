@@ -4,6 +4,9 @@ language: node_js
 node_js:
   - "10.13.0"
 
+os: osx  
+osx_image: xcode10.1
+
 branches:
   only:
   - master
