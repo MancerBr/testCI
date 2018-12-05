@@ -27,7 +27,6 @@ before_script:
   - gem install cocoapods
 
 script:
-  - ionic cordova plugin add https://github.com/Telerik-Verified-Plugins/ImagePicker.git --variable PHOTO_LIBRARY_USAGE_DESCRIPTION="Select images to upload"
   - ionic cordova platform add ios
   - cd platforms/ios
   - pod init
